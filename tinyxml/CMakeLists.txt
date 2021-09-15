@@ -2,6 +2,7 @@ file(GLOB SRCS "*.c" "*.cpp")
 file(GLOB PUBLIC_HEADERS "*.h")
 
 set(SRCS ${SRCS} ${PUBLIC_HEADERS})
+set(DEFS TIXML_USE_STL)
 set(LIBS )
 
 __add_real_target(tinyxml lib SOURCE ${SRCS} DEF ${DEFS} LIB ${LIBS}
