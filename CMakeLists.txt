@@ -9,6 +9,7 @@ __add_real_target(tinyxml lib SOURCE ${SRCS}
 							  DEF ${DEFS}
 							  INC ${INCS}
 							  INTERFACE ${INCS}
+							  INTERFACE_DEF ${INTERFACE_DEFS}
 							  )
 
 if(CC_INSTALL_TINYXML)
